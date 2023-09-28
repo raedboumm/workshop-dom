@@ -1,0 +1,161 @@
+body{
+    background-color: #E3E7E8;
+    font-family: system-ui;
+}
+.container{
+    width: 900px;
+    margin: auto;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+}
+header .shopping{
+    position: relative;
+    text-align: right;
+}
+header .shopping img{
+    width: 40px;
+}
+header .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+.list .item {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+}
+.list .item img {
+    width: 90%;
+object-fit: cover;
+}
+.list .item .title{
+    font-weight: 600;
+}
+.list .item .price{
+    margin: 10px;
+    color: rgb(54, 222, 54);
+    font-weight: bold;
+}
+.list .item button{
+    background-color: #1C1F25;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+.list .item button:hover {
+    background-color: #1c1f25b7;
+}
+.card {
+    margin-top: 40px;
+    background-color: rgb(80, 80, 82);
+min-height: 300px;
+z-index: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.card h1 {
+    color: #E3E7E8;
+    padding:15px ;
+    text-decoration: underline;
+}
+.card .checkout {
+   bottom: 0;
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   
+}
+.card .checkout div{
+    background-color: gold;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.card .checkout .up {
+    background-color: aliceblue;
+  
+
+}
+.card .checkout .up a{
+    text-decoration: none;
+    color: #1C1F25;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(4,1fr);
+     color: #fff;
+     row-gap: 10px;
+}
+.listCard li div {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+}
+.listCard li button {
+    background-color: #757676;
+    border: none ;
+    margin:  0 10px;
+}
+.listCard .count {
+    margin: 0 10px ;
+}
+
+.help {
+    background-color: red;
+}
+#btn {
+    color: white;
+    width: 50px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: transparent ;
+    font-size: 35px ;
+    margin-left: 50%;
+}
+.special {
+    color: red;
+    background-color: red;
+    fill: red;
+}
+
